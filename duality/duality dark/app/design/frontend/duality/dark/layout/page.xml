@@ -35,51 +35,161 @@
         <block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
 
             <block type="page/html_head" name="head" as="head">
-                <action method="addJs"><script>prototype/prototype.js</script></action>
-                <action method="addJs"><script>lib/jquery/jquery-1.10.2.min.js</script></action>
-                <action method="addJs"><script>lib/jquery/noconflict.js</script></action>
-                <action method="addJs"><script>lib/ccard.js</script></action>
-                <action method="addJs"><script>prototype/validation.js</script></action>
-                <action method="addJs"><script>scriptaculous/builder.js</script></action>
-                <action method="addJs"><script>scriptaculous/effects.js</script></action>
-                <action method="addJs"><script>scriptaculous/dragdrop.js</script></action>
-                <action method="addJs"><script>scriptaculous/controls.js</script></action>
-                <action method="addJs"><script>scriptaculous/slider.js</script></action>
-                <action method="addJs"><script>varien/js.js</script></action>
-                <action method="addJs"><script>varien/form.js</script></action>
-                <action method="addJs"><script>mage/translate.js</script></action>
-                <action method="addJs"><script>mage/cookies.js</script></action>
+                <action method="addJs">
+                    <script>prototype/prototype.js</script>
+                </action>
+                <action method="addJs">
+                    <script>lib/jquery/jquery-1.10.2.min.js</script>
+                </action>
+                <action method="addJs">
+                    <script>lib/jquery/noconflict.js</script>
+                </action>
+                <action method="addJs">
+                    <script>lib/ccard.js</script>
+                </action>
+                <action method="addJs">
+                    <script>prototype/validation.js</script>
+                </action>
+                <action method="addJs">
+                    <script>scriptaculous/builder.js</script>
+                </action>
+                <action method="addJs">
+                    <script>scriptaculous/effects.js</script>
+                </action>
+                <action method="addJs">
+                    <script>scriptaculous/dragdrop.js</script>
+                </action>
+                <action method="addJs">
+                    <script>scriptaculous/controls.js</script>
+                </action>
+                <action method="addJs">
+                    <script>scriptaculous/slider.js</script>
+                </action>
+                <action method="addJs">
+                    <script>varien/js.js</script>
+                </action>
+                <action method="addJs">
+                    <script>varien/form.js</script>
+                </action>
+                <action method="addJs">
+                    <script>mage/translate.js</script>
+                </action>
+                <action method="addJs">
+                    <script>mage/cookies.js</script>
+                </action>
 
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
 
                 <!-- Remove items which the RWD package is not dependent upon -->
-                <action method="removeItem"><type>skin_js</type><name>js/ie6.js</name></action>
+                <action method="removeItem">
+                    <type>skin_js</type>
+                    <name>js/ie6.js</name>
+                </action>
 
                 <!-- Add vendor dependencies -->
-                <action method="addItem"><type>skin_js</type><name>js/lib/modernizr.custom.min.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/lib/selectivizr.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/lib/matchMedia.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/lib/matchMedia.addListener.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/lib/enquire.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/app.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/lib/jquery.cycle2.min.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/lib/jquery.cycle2.swipe.min.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/slideshow.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/lib/imagesloaded.js</name></action>
-                <action method="addLinkRel"><rel>stylesheet</rel><href>//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600</href></action>
-                <action method="addItem"><type>skin_js</type><name>js/minicart.js</name></action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/lib/modernizr.custom.min.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/lib/selectivizr.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/lib/matchMedia.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/lib/matchMedia.addListener.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/lib/enquire.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/app.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/lib/jquery.cycle2.min.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/lib/jquery.cycle2.swipe.min.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/slideshow.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/lib/imagesloaded.js</name>
+                </action>
+                <action method="addLinkRel">
+                    <rel>stylesheet</rel>
+                    <href>//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600</href>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/minicart.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/owl.carousel.js</name>
+                </action>
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/owlStart.js</name>
+                </action>
 
                 <!-- Add stylesheets with no media queries for use in IE 8 and below -->
-                <action method="addItem"><type>skin_css</type><name>css/styles-ie8.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
-                <action method="addItem"><type>skin_css</type><name>css/madisonisland-ie8.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
+                <action method="addItem">
+                    <type>skin_css</type>
+                    <name>css/styles-ie8.css</name>
+                    <params/>
+                    <if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if>
+                </action>
+                <action method="addItem">
+                    <type>skin_css</type>
+                    <name>css/madisonisland-ie8.css</name>
+                    <params/>
+                    <if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if>
+                </action>
+
 
                 <!-- Add stylesheets with media queries for use by modern browsers -->
-                <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/><if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if></action>
-                <action method="addItem"><type>skin_css</type><name>css/madisonisland.css</name><params/><if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if></action>
+                <action method="addItem">
+                    <type>skin_css</type>
+                    <name>css/styles.css</name>
+                    <params/>
+                    <if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if>
+                </action>
+                <action method="addItem">
+                    <type>skin_css</type>
+                    <name>css/madisonisland.css</name>
+                    <params/>
+                    <if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if>
+                </action>
+                <action method="addItem">
+                    <type>skin_css</type>
+                    <name>css/owl.carousel.css</name>
+                    <params/>
+                    <if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if>
+                </action>
+                <action method="addItem">
+                    <type>skin_css</type>
+                    <name>css/owl.theme.default.css</name>
+                    <params/>
+                    <if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if>
+                </action>
 
                 <!-- Sets viewport meta tag using text block -->
                 <block type="core/text" name="head.viewport">
-                    <action method="setText"><text><![CDATA[<meta name="viewport" content="initial-scale=1.0, width=device-width" />]]>&#10;</text></action>
+                    <action method="setText">
+                        <text><![CDATA[<meta name="viewport" content="initial-scale=1.0, width=device-width" />]]>&#10;</text>
+                    </action>
                 </block>
             </block>
 
@@ -100,7 +210,9 @@
                 </block>
                 <block type="page/html_wrapper" name="top.container" as="topContainer" translate="label">
                     <label>Page Header</label>
-                    <action method="setElementClass"><value>top-container</value></action>
+                    <action method="setElementClass">
+                        <value>top-container</value>
+                    </action>
                 </block>
                 <block type="page/html_welcome" name="welcome" as="welcome"/>
             </block>
@@ -128,20 +240,28 @@
 
             <block type="page/html_wrapper" name="footer.before" as="footer_before" translate="label">
                 <label>Page Footer</label>
-                <action method="setElementClass"><value>footer-before-container</value></action>
+                <action method="setElementClass">
+                    <value>footer-before-container</value>
+                </action>
             </block>
 
             <block type="page/html_footer" name="footer" as="footer" template="page/html/footer.phtml">
                 <block type="page/html_wrapper" name="bottom.container" as="bottomContainer" translate="label">
                     <label>Page Footer</label>
-                    <action method="setElementClass"><value>bottom-container</value></action>
+                    <action method="setElementClass">
+                        <value>bottom-container</value>
+                    </action>
                 </block>
                 <block type="page/switch" name="store_switcher" as="store_switcher" after="*" template="page/switch/stores.phtml"/>
                 <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml">
-                    <action method="setTitle"><title>Quick Links</title></action>
+                    <action method="setTitle">
+                        <title>Quick Links</title>
+                    </action>
                 </block>
                 <block type="page/template_links" name="footer_links2" as="footer_links2" template="page/template/links.phtml">
-                    <action method="setTitle"><title>Account</title></action>
+                    <action method="setTitle">
+                        <title>Account</title>
+                    </action>
                 </block>
                 <!-- This static block can be created and populated in admin. The footer_links cms block can be used as a starting point. -->
                 <!--<block type="cms/block" name="footer_social_links">
@@ -167,16 +287,35 @@
             <block type="page/html_header" name="header" as="header"/>
 
             <block type="page/html_head" name="head" as="head">
-                <action method="addJs"><script>prototype/prototype.js</script></action>
-                <action method="addJs"><script>mage/translate.js</script></action>
-                <action method="addJs"><script>lib/ccard.js</script></action>
-                <action method="addJs"><script>prototype/validation.js</script></action>
-                <action method="addJs"><script>varien/js.js</script></action>
+                <action method="addJs">
+                    <script>prototype/prototype.js</script>
+                </action>
+                <action method="addJs">
+                    <script>mage/translate.js</script>
+                </action>
+                <action method="addJs">
+                    <script>lib/ccard.js</script>
+                </action>
+                <action method="addJs">
+                    <script>prototype/validation.js</script>
+                </action>
+                <action method="addJs">
+                    <script>varien/js.js</script>
+                </action>
 
-                <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
-                <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>
+                <action method="addCss">
+                    <stylesheet>css/styles.css</stylesheet>
+                </action>
+                <action method="addCss">
+                    <stylesheet>css/widgets.css</stylesheet>
+                </action>
 
-                <action method="addItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
+                <action method="addItem">
+                    <type>js</type>
+                    <name>lib/ds-sleight.js</name>
+                    <params/>
+                    <if>lt IE 7</if>
+                </action>
                 <!--<action method="addItem"><type>skin_js</type><name>js/iehover-fix.js</name><params/><if>lt IE 7</if></action>-->
             </block>
 
@@ -191,50 +330,80 @@
     <page_empty translate="label">
         <label>All Empty Layout Pages</label>
         <reference name="root">
-            <action method="setTemplate"><template>page/empty.phtml</template></action>
+            <action method="setTemplate">
+                <template>page/empty.phtml</template>
+            </action>
             <!-- Mark root page block that template is applied -->
-            <action method="setIsHandle"><applied>1</applied></action>
-            <action method="setLayoutCode"><name>empty</name></action>
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+            <action method="setLayoutCode">
+                <name>empty</name>
+            </action>
         </reference>
     </page_empty>
 
     <page_one_column translate="label">
         <label>All One-Column Layout Pages</label>
         <reference name="root">
-            <action method="setTemplate"><template>page/1column.phtml</template></action>
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
             <!-- Mark root page block that template is applied -->
-            <action method="setIsHandle"><applied>1</applied></action>
-            <action method="setLayoutCode"><name>one_column</name></action>
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+            <action method="setLayoutCode">
+                <name>one_column</name>
+            </action>
         </reference>
     </page_one_column>
 
     <page_two_columns_left translate="label">
         <label>All Two-Column Layout Pages (Left Column)</label>
         <reference name="root">
-            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+            <action method="setTemplate">
+                <template>page/2columns-left.phtml</template>
+            </action>
             <!-- Mark root page block that template is applied -->
-            <action method="setIsHandle"><applied>1</applied></action>
-            <action method="setLayoutCode"><name>two_columns_left</name></action>
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+            <action method="setLayoutCode">
+                <name>two_columns_left</name>
+            </action>
         </reference>
     </page_two_columns_left>
 
     <page_two_columns_right translate="label">
         <label>All Two-Column Layout Pages (Right Column)</label>
         <reference name="root">
-            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+            <action method="setTemplate">
+                <template>page/2columns-right.phtml</template>
+            </action>
             <!-- Mark root page block that template is applied -->
-            <action method="setIsHandle"><applied>1</applied></action>
-            <action method="setLayoutCode"><name>two_columns_right</name></action>
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+            <action method="setLayoutCode">
+                <name>two_columns_right</name>
+            </action>
         </reference>
     </page_two_columns_right>
 
     <page_three_columns translate="label">
         <label>All Three-Column Layout Pages</label>
         <reference name="root">
-            <action method="setTemplate"><template>page/3columns.phtml</template></action>
+            <action method="setTemplate">
+                <template>page/3columns.phtml</template>
+            </action>
             <!-- Mark root page block that template is applied -->
-            <action method="setIsHandle"><applied>1</applied></action>
-            <action method="setLayoutCode"><name>three_columns</name></action>
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+            <action method="setLayoutCode">
+                <name>three_columns</name>
+            </action>
         </reference>
     </page_three_columns>
 </layout>
