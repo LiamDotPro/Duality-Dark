@@ -490,7 +490,7 @@ select,
 table,
 textarea {
   font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
-  color: #636363;
+  color: #f4f4f4;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -3150,7 +3150,7 @@ body {
   min-width: 320px;
   min-height: 100%;
   margin: 0 auto;
-  background: #FFFFFF;
+  background: #F4f4f4;
 }
 
 .wrapper:after {
@@ -3183,7 +3183,7 @@ body {
  * ============================================ */
 .header-language-background {
   padding: 10px;
-  background-color: #3399cc;
+  background-color: #efefef;
   text-transform: uppercase;
 }
 .header-language-background .header-language-container {
@@ -3227,7 +3227,7 @@ body {
 }
 .header-language-background,
 .header-language-background a {
-  color: #e6e6e6;
+  color: #000000;
 }
 
 @media only screen and (max-width: 770px) {
@@ -3989,7 +3989,7 @@ a.skip-link {
   padding: 3px 0;
 }
 .footer .block-title strong {
-  font-weight: normal;
+  font-weight: bold;
 }
 .footer .block-title,
 .footer address {
@@ -10600,4 +10600,9 @@ div.calendar table td.button {
   background: inherit;
   color: inherit;
   text-transform: none;
+}
+
+.slider {
+    height: 300px;
+    background: pink;
 }
