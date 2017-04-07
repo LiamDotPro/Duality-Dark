@@ -26,15 +26,12 @@
 ?>
 <div class="block block-subscribe">
     <div class="block-title">
-        <strong><span><?php echo $this->__('Newsletter') ?></span></strong>
+        <strong><span><?php echo $this->__('Get informed when the latest posters arrive') ?></span></strong>
     </div>
     <form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="newsletter-validate-detail">
         <div class="block-content">
-            <div class="form-subscribe-header">
-                <label for="newsletter"><?php echo $this->__('Sign Up for Our Newsletter:') ?></label>
-            </div>
             <div class="input-box">
-               <input type="email" autocapitalize="off" autocorrect="off" spellcheck="false" name="email" id="newsletter" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Sign up for our newsletter')) ?>" class="input-text required-entry validate-email" />
+                <input placeholder="enter your@email.com here" type="email" autocapitalize="off" autocorrect="off" spellcheck="false" name="email" id="newsletter" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Sign up for our newsletter')) ?>" class="input-text required-entry validate-email" />
             </div>
             <div class="actions">
                 <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Subscribe')) ?>" class="button"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>

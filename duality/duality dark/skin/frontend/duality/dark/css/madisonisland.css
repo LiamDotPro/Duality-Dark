@@ -29,7 +29,7 @@
  * Primary Banner
  */
 body.cms-home .main-container {
-  padding-top: 20px;
+border-top: #f35f45 2px solid;
 }
 body.cms-home .slideshow-container {
   margin-top: 0;

@@ -36,7 +36,7 @@
 
         <?php echo $this->getChildHtml('currency_switcher') ?>
 
-        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getChildHtml('accountLinks') ?></p>
+        <p class="welcome-msg nomarg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getChildHtml('accountLinks') ?></p>
     </div>
 </div>
 
@@ -56,18 +56,18 @@
         <div class="skip-links">
             <a href="#header-nav" class="skip-link skip-nav">
                 <span class="icon"></span>
-                <span class="label"><?php echo $this->__('Menu'); ?></span>
+                <span class="label d-label"><?php echo $this->__('Menu'); ?></span>
             </a>
 
             <a href="#header-search" class="skip-link skip-search">
                 <span class="icon"></span>
-                <span class="label"><?php echo $this->__('Search'); ?></span>
+                <span class="label d-label"><?php echo $this->__('Search'); ?></span>
             </a>
 
             <div class="account-cart-wrapper">
                 <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
                     <span class="icon"></span>
-                    <span class="label"><?php echo $this->__('Account'); ?></span>
+                    <span class="label d-label"><?php echo $this->__('Account'); ?></span>
                 </a>
 
                 <!-- Cart -->

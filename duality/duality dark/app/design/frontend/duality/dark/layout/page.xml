@@ -143,7 +143,10 @@
                     <type>skin_js</type>
                     <name>js/owlStart.js</name>
                 </action>
-
+                <action method="addItem">
+                    <type>skin_js</type>
+                    <name>js/bootstrap.min.js</name>
+                </action>
                 <!-- Add stylesheets with no media queries for use in IE 8 and below -->
                 <action method="addItem">
                     <type>skin_css</type>
@@ -181,6 +184,12 @@
                 <action method="addItem">
                     <type>skin_css</type>
                     <name>css/owl.theme.default.css</name>
+                    <params/>
+                    <if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if>
+                </action>
+                <action method="addItem">
+                    <type>skin_css</type>
+                    <name>css/bootstrap.min.css</name>
                     <params/>
                     <if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if>
                 </action>
